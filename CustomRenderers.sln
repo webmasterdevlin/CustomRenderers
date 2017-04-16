@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRenderers.UWP", "Cust
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRenderers.iOS", "CustomRenderers\CustomRenderers.iOS\CustomRenderers.iOS.csproj", "{50202C05-1561-4C28-BEB9-6C4A09D48397}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Screenshots", "Screenshots", "{8401C80C-5C00-4C85-A383-BC7797402E9A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Users\Webmaster\Dropbox\Xamarin Training Philippines\Samples\Custom Renderers\ios_after.jpg = ..\..\Users\Webmaster\Dropbox\Xamarin Training Philippines\Samples\Custom Renderers\ios_after.jpg
+		..\..\Users\Webmaster\Dropbox\Xamarin Training Philippines\Samples\Custom Renderers\ios_before.jpg = ..\..\Users\Webmaster\Dropbox\Xamarin Training Philippines\Samples\Custom Renderers\ios_before.jpg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -82,8 +88,6 @@ Global
 		{1D336F28-CACC-4A80-9E1D-4877690CF05F}.Debug|ARM.Build.0 = Debug|Any CPU
 		{1D336F28-CACC-4A80-9E1D-4877690CF05F}.Debug|ARM.Deploy.0 = Debug|Any CPU
 		{1D336F28-CACC-4A80-9E1D-4877690CF05F}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{1D336F28-CACC-4A80-9E1D-4877690CF05F}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{1D336F28-CACC-4A80-9E1D-4877690CF05F}.Debug|iPhone.Deploy.0 = Debug|Any CPU
 		{1D336F28-CACC-4A80-9E1D-4877690CF05F}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{1D336F28-CACC-4A80-9E1D-4877690CF05F}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{1D336F28-CACC-4A80-9E1D-4877690CF05F}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU

@@ -7,12 +7,12 @@ using Xamarin.Forms;
 
 namespace CustomRenderers
 {
-    public partial class MainPage : ContentPage
+    public class MyViewCell : ViewCell
     {
-        public MainPage()
+        protected override void OnBindingContextChanged()
         {
-
-            InitializeComponent();
+            View.BindingContext = BindingContext;
+            base.OnBindingContextChanged();
         }
     }
 }

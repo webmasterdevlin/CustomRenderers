@@ -3,9 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:CustomRenderers"
              x:Class="CustomRenderers.MainPage">
-
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+    <ContentPage.Content>
+        <StackLayout Padding="40">
+            <Label Text="Contacts"
+                   FontSize="20"
+                   HorizontalOptions="End" />
+            <Button Text="New Entry" />
+            <local:MyListView x:Name="ContactList"
+                              ItemsSource="{Binding Contacts}">
+                <local:MyListView.ItemTemplate>
+                    <DataTemplate>
+                        <local:MyViewCell>
+                            <local:MyViewCell.View>
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding FirstName}"
+                                               FontSize="12"
+                                               FontAttributes="Bold"
+                                               TextColor="Blue">
+                                        </Label>
+                                        <Label Text="{Binding LastName}"
+                                               FontSize="12"
+                                               FontAttributes="Bold"
+                                               TextColor="Blue">
+                                        </Label>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding Email}"
+                                               FontSize="8" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </local:MyViewCell.View>
+                        </local:MyViewCell>
+                    </DataTemplate>
+                </local:MyListView.ItemTemplate>
+            </local:MyListView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

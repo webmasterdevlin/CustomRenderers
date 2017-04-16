@@ -7,12 +7,7 @@ using Xamarin.Forms;
 
 namespace CustomRenderers
 {
-    public partial class MainPage : ContentPage
+    public class MyListView : ListView
     {
-        public MainPage()
-        {
-
-            InitializeComponent();
-        }
     }
 }
